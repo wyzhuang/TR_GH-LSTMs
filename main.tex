@@ -5,6 +5,7 @@
 \usepackage[cmintegrals]{newtxmath}
 \usepackage{booktabs}
 \usepackage{array}
+\usepackage{multirow}
 \hyphenation{op-tical net-works semi-conduc-tor}
 \ifCLASSINFOpdf
 \usepackage[pdftex]{graphicx}
@@ -52,7 +53,7 @@ In recent years, with the wide application of deep learning, researchers have be
 %	Because semantic features and traditional features are irreplaceable, some researchers began to concatenate traditional features with semantic features []. The results show that feature fusion can effectively improve the performance of software defect prediction model. However, the existing researches only simply concatenate semantic features with traditional features, which will introduce noise and reduce the performance of the model.
 
 
-Therefore, we propose a GH-LSTMs model, which extracts both semantic features from word embeddings of ASTs and traditional features provided by the PROMISE\footnote{http://openscience.us/repo/defect} repository using the hierarchical architecture of LSTMs. Additionally, to appropriately determine the combination ratio of the two kinds of features, we introduce the gated fusion mechanism to merge the output of two LSTMs, which utilizes self-learning gates to filter the information passing through.
+Therefore, we propose a GH-LSTMs model, which extracts both semantic features from word embeddings of ASTs and traditional features provided by the PROMISE\footnote{https://web.archive.org/web/20180902031959/http://openscience.us/repo/defect/ck} repository using the hierarchical architecture of LSTMs. Additionally, to appropriately determine the combination ratio of the two kinds of features, we introduce the gated fusion mechanism to merge the output of two LSTMs, which utilizes self-learning gates to filter the information passing through.
 
 
 Our work focuses on with-in project file-level software defect prediction and evaluates prediction performance by means of metrics under both non-effort-aware scenario and effort-aware scenario. Experimental results on 10 projects show that, under non-effort-aware scenario, our proposed GH-LSTMs method outperforms the state-of-the-art methods in terms of $F-measure$. Additionally, under effort-aware scenario, GH-LSTMs achieves better performance than the state-of-the-art methods in terms of $PofB20$ and $IFA$, and comparable performance with the state-of-the-art methods in terms of $P_{opt}$.
@@ -69,6 +70,11 @@ The main contributions of this paper are:
 The rest of this paper is summarized as follows: Section 2 introduces the background, including Deep Belief Network (DBN), word embedding, Recurrent Neural Network (RNN), LSTM and the motivation of this paper; A hierarchical gated networks model is introduced in Section 3; Section 4 describes the experimental setup and results, and then demonstrates the potential threats to validity; Section 5 discusses the related work; The conclusion of this paper and the future work are presented in Section 6.
 
 \section{Background}
+\subsection{Code Representation}
+Software code representation is the prerequisite the software defect prediction, which is aimed at extracting effective code features for a more detailed analysis of source code. Nowadays there are three main types of code representation techniques: Token-Based Code Representation, AST-Based Code Representation and Graph-Based Code Representation~\cite{whua2020fcca}. In the process of Token-Based Code Representation, source code snippets are treated as sequences of tokens and embedded into latent spaces after the bag-of-words representation. In the process of AST-Based Code Representation, source codes are parsed into abstract syntax trees for the purpose of digging the semantic relationships of different code elements. Graph-Based Code Representation uses graphs to describe the structural information of source codes, such as dependency graph, control flow graph and call graph.
+
+Once the code representation is done, the features representing the meaningful information of source codes will be acquired. In this paper, we introduce GH-LSTMs architecture to effectively fuse traditional features and semantic features. Each of them is based on both the Token-Based Code Representation and the AST-Based Code Representation. Since LSTM is unable to handle the graph-structured date, we do not perform the Graph-Based Code Representation as the preparation of defect prediction.
+ 
 \subsection{Deep belief network and word embedding in software defect prediction}
 %Software defect prediction is a process of predicting code areas that potentially contain defects, which can help developers allocate their testing efforts by first checking potentially buggy code.
 Software defect prediction is able to help developers allocate testing resources by predicting potential defects in software modules.
@@ -188,32 +194,32 @@ where $D$ represents all training instances, $C$ is the result categories (buggy
 
 \section{Experiments settings}
 \subsection{Evaluated projects and datasets}
-It is necessary to get the correct defect labels of the source code files to build training/testing datasets. We choose to use publicly available data from the PROMISE~\cite{he2013learning} repository, which is a widely used repository in defect prediction studies~\cite{wang2018deep,fan2019deep,li2017software,he2013learning,jing2014dictionary,chen2020different}. Specifically, based on these previous studies, we selected 10 open-source java projects from PRMOISE repository for the convenience of estimating the performance of our proposed method. PROMISE datasets provide file names, defect labels, and traditional code metrics for different versions of various software projects. According to the projects and version numbers in the repository, we locate the corresponding source code files from GitHub\footnote{https://github.com/} and Apache\footnote{https://www.apache.org/} official websites. Table~\ref{tab1} shows the basic information of all the projects we used, including version numbers, the average number of files, and the average bug rate of each project. The average number of source code files of all projects is 414, and the average bug rate of all projects is 29.5\%.
+It is necessary to get the correct defect labels of the source code files to build training/testing datasets. We choose to use publicly available data from the PROMISE~\cite{he2013learning} repository, which is a widely used repository in defect prediction studies~\cite{wang2018deep,fan2019deep,li2017software,he2013learning,jing2014dictionary,chen2020different}. Specifically, we selected 10 open-source java projects from PRMOISE repository. There are two reasons why we choose these projects as experiment subjects: one is that these 10 projects cover various kinds of functions, another is that it will be convenient for us to  estimate the performance of our proposed method since these projects are also selected in previous studies. PROMISE datasets provide file names, defect labels, and traditional code metrics for different versions of various software projects. According to the projects and version numbers in the repository, we locate the corresponding source code files from GitHub\footnote{https://github.com/} and Apache\footnote{https://www.apache.org/} official websites. Table~\ref{tab1} shows the basic information of all the projects we used, including simple description version numbers, the average number of files, and the average bug rate of each project. The average number of source code files of all projects is 414, and the average bug rate of all projects is 29.5\%.
 
-\begin{table}[htbp]
+\begin{table*}[htbp]
 	\footnotesize
 	\caption{Dataset description}
 	\label{tab1}
 	\tabcolsep 11pt
 	\centering
-	\begin{tabular}{llll}
+	\begin{tabular}{lllll}
 		\toprule
-		Project & Versions & Avg files & Avg bug rate (\%) \\\midrule
-		ant     & 1.5, 1.6, 1.7 & 463    & 19.8\\
-		camel   & 1.2, 1.4, 1.6 & 815    & 23.9\\
-		jedit   & 3.2, 4.0, 4.1 & 296.7  & 27.6\\
-		log4j   & 1.0, 1.1      & 122    & 29.6\\
-		lucene  & 2.0, 2.2, 2.4 & 260.7  & 54.9\\
-		xalan   & 2.4, 2.5      & 763    & 31.7\\
-		xerces  & 1.2, 1.3      & 446.5  & 15.7\\
-		ivy     & 1.4, 2.0      & 399    & 6.7 \\
-		synapse & 1.0, 1.1, 1.2 & 220.3  & 22.6\\
-		poi     & 1.5, 2.5, 3.0 & 354.7  & 62.5\\
-		Avg     & -             & 414.9  & 29.5\\
+		Project & Description &Versions & Avg files & Avg bug rate (\%) \\\midrule
+		ant     & A Java-based build tool.&1.5, 1.6, 1.7 & 463    & 19.8\\
+		camel   & An open-source integration framework.&1.2, 1.4, 1.6 & 815    & 23.9\\
+		jedit   & A text-editor designed for programmers.&3.2, 4.0, 4.1 & 296.7  & 27.6\\
+		log4j   & A logging library for Java.&1.0, 1.1      & 122    & 29.6\\
+		lucene  & An open-source search software.&2.0, 2.2, 2.4 & 260.7  & 54.9\\
+		xalan   & A program to transform XML documents.&2.4, 2.5      & 763    & 31.7\\
+		xerces  & An open-source XML parser.&1.2, 1.3      & 446.5  & 15.7\\
+		ivy     & A popular dependency manager.&1.4, 2.0      & 399    & 6.7 \\
+		synapse & A lightweight and high-performance Enterprise Service Bus.&1.0, 1.1, 1.2 & 220.3  & 22.6\\
+		poi     & A library providing access to Microsoft Office files in Java. &1.5, 2.5, 3.0 & 354.7  & 62.5\\
+		Avg     & -&-             & 414.9  & 29.5\\
 		\bottomrule
 	\end{tabular}
-\end{table}
-The semantic features are learned from the AST token sequences of the source code files. We use \textit{javalang}, an open-source Python library, to extract AST token sequences from the source code files. According to existing study[6], we only extracted three categories of AST nodes: method invocation type, declaration type and control-flow type with the intention of avoiding the noise that might be introduced by some specific AST node types such as intrinsic type declaration. The details of selected AST nodes are presented in Table~\ref{tab2}. Then the extracted AST token sequences will be used to build semantic code corpus for training a GloVe model as described in Section~\ref{data_preprocessing}, which later will be used to generate semantic features. As for the traditional feature, we selected 18 code metrics provided by the PROMISE repository like the existing researches~\cite{wang2018deep,fan2019deep} and use them as the traditional feature inputs for our GH-LSTMs model, the details of these code metrics are presented in Table~\ref{tab3}.
+\end{table*}
+The semantic features are learned from the AST token sequences of the source code files. We use \textit{javalang\footnote{https://github.com/c2nes/javalang}}, an open-source Python library, to extract AST token sequences from the source code files. According to existing study[6], we only extracted three categories of AST nodes: method invocation type, declaration type and control-flow type with the intention of avoiding the noise that might be introduced by some specific AST node types such as intrinsic type declaration. The details of selected AST nodes are presented in Table~\ref{tab2}. Then the extracted AST token sequences will be used to build semantic code corpus for training a GloVe model as described in Section~\ref{data_preprocessing}, which later will be used to generate semantic features. As for the traditional feature, we selected 18 code metrics provided by the PROMISE repository like the existing researches~\cite{wang2018deep,fan2019deep} and use them as the traditional feature inputs for our GH-LSTMs model, the details of these code metrics are presented in Table~\ref{tab3}.
 
 \begin{table}[htbp]
 	\footnotesize
@@ -234,9 +240,9 @@ The semantic features are learned from the AST token sequences of the source cod
 		TryStatement         & SwitchStatement       \\
 		BlockStatement       & StatementExpression   \\
 		TryResource          & CatchClause           \\
-		CatchClauseParameter & catchclauseparameter  \\
-		switchstatementcase  & forcontrol            \\
-		enhancedforcontrol   &                \\
+		CatchClauseParameter & CatchClauseParameter  \\
+		SwitchStatementSase  & ForControl            \\
+		EnhancedForControl   &                \\
 		\bottomrule
 	\end{tabular}
 \end{table}
@@ -264,11 +270,13 @@ The semantic features are learned from the AST token sequences of the source cod
 \end{table*}
 
 \subsection{Baseline setting}
-In this paper, we select the following three baseline methods as comparative methods to estimate the performance of our proposed GH-LSTMs:
+In this paper, we select the following five baseline methods as comparative methods to estimate the performance of our proposed GH-LSTMs:
 \begin{itemize}
+	\item TRD (Traditional Feature + LSTM): LSTM model with traditional features provided by PROMISE.
 	\item DBN~\cite{wang2018deep}(DBN Feature + LSTM): LSTM model with semantic features generated by DBN.
 	\item SCE~\cite{liang2019seml}(Semantic-Code-Embedding + LSTM): LSTM model with semantic features generated by word embedding.
 	\item DP-AM~\cite{fan2019deep}: A single bidirectional recurrent neural network based on attention mechanism with semantic features generated by word embedding and auxiliary input of traditional features provided by PROMISE repository. Note that DP-AM does not leverage a hierarchical architecture of networks, which means that the traditional features are combined with the extracted semantic information by simple concatenation.
+	\item DP-CNN~\cite{jian2017dpcnn}: A CNN model with semantic features generated by word embedding. Note that DP-CNN combines the CNN-extracted semantic features with traditional features by simple concatenation for better performance.
 \end{itemize}
 
 
@@ -340,22 +348,46 @@ To be specific, we make the following comparisons to determine the result of Win
 
 
 \subsection{Parameters setting}
-Every defect prediction method implemented in this paper can be divided into two steps: feature extraction and classifier training. In the feature extraction phase, we set the same training parameters of GloVe model(used by SCE, DP-AM and GH-LSTMs) to generate the semantic features. To be specific, we set the embedding dimensions to be 40 and keep all other parameters as their default values\footnote{https://github.com/stanfordnlp/GloVe/blob/master/demo.sh}. As for the DBN model that generates DBN features, we stick to the original study~\cite{wang2018deep}, i.e., we set the number of hidden layers to 10, the number of nodes in each hidden layer to 100 and the number of iterations to 200. In the classifier training phase, we set the same parameters for all the LSTM networks used in GH-LSTMs and the baseline methods. Details of these parameters are shown in Table~\ref{tab_parameters}. Note that DP-AM uses a bidirectional RNN instead of LSTM and employs attention mechanism to boost performance, so we set the parameters of DP-AM according to the original study~\cite{fan2019deep}.
+Every defect prediction method implemented in this paper can be divided into two steps: feature extraction and classifier training. In the feature extraction phase, we set the same training parameters of GloVe model(used by SCE, DP-AM, DP-CNN and GH-LSTMs) to generate the semantic features. To be specific, we set the embedding dimensions to be 40 and keep all other parameters as their default values\footnote{https://github.com/stanfordnlp/GloVe/blob/master/demo.sh}. As for the DBN model that generates DBN features, we stick to the original study~\cite{wang2018deep}, i.e., we set the number of hidden layers to 10, the number of nodes in each hidden layer to 100 and the number of iterations to 200. In the classifier training phase, we set the same parameters for all the LSTM networks used in GH-LSTMs, TRD, DBN and SCE, which are shown in Table~\ref{tab_parameters}. The other parameter settings of GloVe, DBN, DP-AM and DP-CNN are listed in Table~\ref{tab_other_parameters}. Note that DP-AM uses a bidirectional RNN instead of LSTM and employs attention mechanism to boost performance and DP-CNN uses a CNN to extract semantic features further, so we set the parameters of DP-AM and DP-CNN according to the original studies~\cite{fan2019deep, jian2017dpcnn}.
 
 \begin{table*}[htbp]
 	\footnotesize
-	\caption{Hyper parameters for all LSTM networks}
+	\caption{Hyper parameters for all LSTM networks used in GH-LSTMs, TRD, DBN and SCE}
 	\label{tab_parameters}
 	\tabcolsep 40pt
 	\centering
-	\begin{tabular}{ll}
+	\begin{tabular}{lll}
 		\toprule
-		Parameter      & Description (value) \\\midrule
-		LSTM units     & The number of the LSTM units in each layer (128). \\
-		Batch size     & The number of training samples that are fed to LSTM at a time (2048). \\
-		Epoch          & One forward/backward pass of all the training samples (200).         \\
-		Optimizer      & The function that optimizes trainable parameters during training (adam).         \\
-		Activation     & The activation function used in fully connected layers. (sigmoid).\\
+		Parameter      & Description & Value \\\midrule
+		LSTM units     & The number of the LSTM units in each layer & 128 \\
+		Batch size     & The number of training samples that are fed to LSTM at a time. & 2048 \\
+		Epoch          & One forward/backward pass of all the training samples. & 200         \\
+		Optimizer      & The function that optimizes trainable parameters during training. & Adam        \\
+		Activation     & The activation function used in fully connected layers. & Sigmoid\\
+		\bottomrule
+	\end{tabular}
+\end{table*}
+
+\begin{table*}[htbp]
+	\footnotesize
+	\caption{Hyper parameters for GloVe, DBN, DP-AM and DP-CNN}
+	\label{tab_other_parameters}
+	\tabcolsep 40pt
+	\centering
+	\begin{tabular}{llll}
+		\toprule
+		Method/Tool             & Parameter Description                      & Value               \\\midrule
+		\multirow{3}{*}{GloVe}  & The size of generated word embedding.      & 40                  \\
+		                        & The size of the context window.            & 15                  \\
+		                        & The max number of iterations.              & 15                  \\\midrule
+		\multirow{3}{*}{DBN}    & The number of hidden layers.               & 10                  \\
+		                        & The number of nodes in each hidden layer.  & 100                 \\
+		                        & The number of iterations.                  & 100                 \\\midrule
+		\multirow{2}{*}{DP-AM}  & PARAMETER HERE.                            & VALUE HERE.         \\
+		                        & PARAMETER HERE.                            & VALUE HERE.         \\\midrule
+		\multirow{3}{*}{DP-CNN} & The number of Filters.                     & 10                  \\
+		                        & The length of filter.                      & 5                   \\
+		                        & The number of Hidden Nodes.                & 100                 \\
 		\bottomrule
 	\end{tabular}
 \end{table*}
@@ -592,6 +624,7 @@ External validity refers to the validity of a scientific research result that ca
 \subsection{Construct validity}
 Construct validity refers to the degree to which the independent variables and dependent variables really represent the concepts that we are interested in measuring. The independent variables in our study can be divided into semantic features and traditional features. The semantic features are extracted from ASTs of source code files using word embedding technique, which is proved effective by previous studies~\cite{liang2019seml,fan2019deep}. Additionally, we select 18 code metrics provided by the PROMISE repository as traditional features. These code metrics are calculated by the CKJM tool~\cite{jureczko2010towards}. For dependent variables, we use bug label data that identified by the BugInfo tool~\cite{jureczko2010using} from the PROMISE repository, based on which a lot of studies has been conducted ~\cite{wang2018deep,liang2019seml,fan2019deep}. To sum up, the construct validity of the independent variables and dependent variables of this paper should be acceptable.
 
+Please note that due to the limitation of the LSTM architecture, in this paper we perform defect prediction using only sequence-like features, i.e., semantic features in the form of AST word embedding sequence and traditional features in the form of feature value sequence. The graph-based features such as control flow graphs are not considered, though they are proved to be effective in related studies~\cite{phan2017convolutional, whua2020fcca}. However, the effectiveness of our proposed gated hierarchical architecture will not be affected when different networks such as CNN or GCNN are used to form the hierarchical architecture, which means that in will be a promising future work to merge the graph-based features into the existing hierarchical architecture with the help of graph-based networks.
 %As for the construct validity, the main threat involves the measurement. We choose 4 widely-used metrics on the testing dataset to measure and compare the performance of models. We choose the datasets in PROMISE repository, and a lot of research is based on these datasets. Therefore, the quality of the test datasets should be acceptable.
 \subsection{Conclusion validity}
 %Conclusion validity is the degree to which conclusions we reach about relationships in our data are reasonable. There is little threat to conclusion validity in our study. To mitigate it, a large number of experimental trials have been conducted for each model, as well as each dataset. These trials have resulted in sufficiently huge experimental data, which helped us obtain statistically reliable results.

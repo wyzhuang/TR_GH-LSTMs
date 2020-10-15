@@ -55,6 +55,11 @@ Y.~Zhou, Y.~Yang, H.~Lu, L.~Chen, Y.~Li, Y.~Zhao, J.~Qian, and B.~Xu, ``How far
   prediction,'' \emph{ACM Transactions on Software Engineering and Methodology
   (TOSEM)}, vol.~27, no.~1, pp. 1--51, 2018.
 
+\bibitem{whua2020fcca}
+W.~{Hua}, Y.~{Sui}, Y.~{Wan}, G.~{Liu}, and G.~{Xu}, ``Fcca: Hybrid code
+  representation for functional clone detection using attention networks,''
+  \emph{IEEE Transactions on Reliability}, pp. 1--15, 2020.
+
 \bibitem{fan2019deep}
 G.~Fan, X.~Diao, H.~Yu, K.~Yang, and L.~Chen, ``Deep semantic feature learning
   with embedded static metrics for software defect prediction,'' in \emph{2019
@@ -126,6 +131,16 @@ X.~Chen, Y.~Mu, Y.~Qu, C.~Ni, M.~Liu, T.~He, and S.~Liu, ``Do different
   modules?'' \emph{Journal of Software: Evolution and Process}, vol.~32, no.~5,
   p. e2234, 2020.
 
+\bibitem{jian2017dpcnn}
+\BIBentryALTinterwordspacing
+J.~Li, P.~He, J.~Zhu, and M.~R. Lyu, ``Software defect prediction via
+  convolutional neural network,'' in \emph{2017 {IEEE} International Conference
+  on Software Quality, Reliability and Security, {QRS} 2017, Prague, Czech
+  Republic, July 25-29, 2017}.\hskip 1em plus 0.5em minus 0.4em\relax {IEEE},
+  2017, pp. 318--328. [Online]. Available:
+  \url{https://doi.org/10.1109/QRS.2017.42}
+\BIBentrySTDinterwordspacing
+
 \bibitem{jiang2008techniques}
 Y.~Jiang, B.~Cukic, and Y.~Ma, ``Techniques for evaluating fault prediction
   models,'' \emph{Empirical Software Engineering}, vol.~13, no.~5, pp.
@@ -188,6 +203,12 @@ M.~Jureczko and L.~Madeyski, ``Towards identifying software project clusters
 M.~Jureczko and D.~Spinellis, ``Using object-oriented design metrics to predict
   software defects,'' \emph{Models and Methods of System Dependability. Oficyna
   Wydawnicza Politechniki Wroc{\l}awskiej}, pp. 69--81, 2010.
+
+\bibitem{phan2017convolutional}
+A.~V. Phan, M.~Le~Nguyen, and L.~T. Bui, ``Convolutional neural networks over
+  control flow graphs for software defect prediction,'' in \emph{2017 IEEE 29th
+  International Conference on Tools with Artificial Intelligence
+  (ICTAI)}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2017, pp. 45--52.
 
 \bibitem{nagappan2010change}
 N.~Nagappan, A.~Zeller, T.~Zimmermann, K.~Herzig, and B.~Murphy, ``Change

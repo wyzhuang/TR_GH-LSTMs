@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.9.15)  15 OCT 2020 09:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.9.15)  15 OCT 2020 19:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -361,6 +361,13 @@ Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
 \backup@length=\skip48
 \ar@cellbox=\box32
 )
+(c:/Alex/Software/texlive/2019/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+\multirow@colwidth=\skip49
+\multirow@cntb=\count122
+\multirow@dima=\skip50
+\bigstrutjot=\dimen150
+)
 (c:/Alex/Software/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -378,106 +385,106 @@ Package graphics Info: Driver file: pdftex.def on input line 99.
 (c:/Alex/Software/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen150
-\Gin@req@width=\dimen151
+\Gin@req@height=\dimen151
+\Gin@req@width=\dimen152
 )
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 13.
-LaTeX Font Info:    Try loading font information for OML+ntxmi on input line 13
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 14.
+LaTeX Font Info:    Try loading font information for OML+ntxmi on input line 14
 .
 
 (c:/Alex/Software/texlive/2019/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 13.
-LaTeX Font Info:    Try loading font information for U+ntxexa on input line 13.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 14.
+LaTeX Font Info:    Try loading font information for U+ntxexa on input line 14.
 
 
 (c:/Alex/Software/texlive/2019/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 13.
-LaTeX Font Info:    Try loading font information for LMS+ntxsy on input line 13
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 14.
+LaTeX Font Info:    Try loading font information for LMS+ntxsy on input line 14
 .
 
 (c:/Alex/Software/texlive/2019/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 14.
 LaTeX Font Info:    Try loading font information for LMX+ntxexx on input line 1
-3.
+4.
 
 (c:/Alex/Software/texlive/2019/texmf-dist/tex/latex/newtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 13.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 14.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <5> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 13.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 14.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 13.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 14.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <7> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 13.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 14.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 13.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 14.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <8> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 13.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 14.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 13.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 14.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <9> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 13.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 14.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 13.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 14.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 13.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 14.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <11> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 13.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 14.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <11> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 13.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 14.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 13.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 14.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 13.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 14.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 13.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 14.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <17> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 13.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 14.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 13.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 14.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <20> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 13.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 14.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 13.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 14.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <24> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 13.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 14.
 
 -- Lines per column: 58 (exact).
 (c:/Alex/Software/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count122
-\scratchdimen=\dimen152
+\scratchcounter=\count123
+\scratchdimen=\dimen153
 \scratchbox=\box33
-\nofMPsegments=\count123
-\nofMParguments=\count124
+\nofMPsegments=\count124
+\nofMParguments=\count125
 \everyMPshowfont=\toks23
-\MPscratchCnt=\count125
-\MPscratchDim=\dimen153
-\MPnumerator=\count126
-\makeMPintoPDFobject=\count127
+\MPscratchCnt=\count126
+\MPscratchDim=\dimen154
+\MPnumerator=\count127
+\makeMPintoPDFobject=\count128
 \everyMPtoPDFconversion=\toks24
 )
 (c:/Alex/Software/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
@@ -527,66 +534,71 @@ g
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Underfull \hbox (badness 1603) in paragraph at lines 28--28
+Underfull \hbox (badness 1603) in paragraph at lines 29--29
 \T1/ptm/m/n/8 Sci-ence and Tech-nol-ogy, Soo-chow Uni-ver-sity, Suzhou, 215006,
  China
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--28
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
 \T1/ptm/m/n/8 (e-mail: 20185227067@stu.suda.edu.cn; 20204227007@stu.suda.edu.cn
 ;
  []
 
 LaTeX Font Info:    Try loading font information for OT1+ntxtlf on input line 5
-5.
+6.
 (c:/Alex/Software/texlive/2019/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
 File: ot1ntxtlf.fd 2015/01/17 v1.0 font definition file for OT1/ntx/tlf
 )
-LaTeX Font Info:    Try loading font information for U+ntxmia on input line 55.
+LaTeX Font Info:    Try loading font information for U+ntxmia on input line 56.
 
 
 (c:/Alex/Software/texlive/2019/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
 )
-LaTeX Font Info:    Try loading font information for U+ntxsym on input line 55.
+LaTeX Font Info:    Try loading font information for U+ntxsym on input line 56.
 
 
 (c:/Alex/Software/texlive/2019/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
-LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 55.
+LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 56.
 
 
 (c:/Alex/Software/texlive/2019/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
-) [1{c:/Alex/Software/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
-}
+)
+Overfull \hbox (23.89366pt too wide) in paragraph at lines 56--56
+[][][]\T1/ptm/m/n/8 https://web.archive.org/web/20180902031959/http://openscien
+ce.us/repo/defect/ck| 
+ []
+
+[1{c:/Alex/Software/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ] [2]
-<figs/LSTM_model.pdf, id=22, 355.3275pt x 198.7425pt>
+<figs/LSTM_model.pdf, id=21, 355.3275pt x 198.7425pt>
 File: figs/LSTM_model.pdf Graphic file (type pdf)
 <use figs/LSTM_model.pdf>
-Package pdftex.def Info: figs/LSTM_model.pdf  used on input line 118.
+Package pdftex.def Info: figs/LSTM_model.pdf  used on input line 124.
 (pdftex.def)             Requested size: 230.96013pt x 129.18108pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./figs/example.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<figs/example.pdf, id=23, 450.85066pt x 184.93492pt>
+<figs/example.pdf, id=22, 450.85066pt x 184.93492pt>
 File: figs/example.pdf Graphic file (type pdf)
 <use figs/example.pdf>
-Package pdftex.def Info: figs/example.pdf  used on input line 127.
+Package pdftex.def Info: figs/example.pdf  used on input line 133.
 (pdftex.def)             Requested size: 450.84955pt x 184.93445pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./figs/GH-LSTMs.pdf): PDF inclusion: found P
 DF version <1.7>, but at most version <1.5> allowed
-<figs/GH-LSTMs.pdf, id=24, 428.20166pt x 167.47469pt>
+<figs/GH-LSTMs.pdf, id=23, 428.20166pt x 167.47469pt>
 File: figs/GH-LSTMs.pdf Graphic file (type pdf)
 <use figs/GH-LSTMs.pdf>
-Package pdftex.def Info: figs/GH-LSTMs.pdf  used on input line 141.
+Package pdftex.def Info: figs/GH-LSTMs.pdf  used on input line 147.
 (pdftex.def)             Requested size: 471.02327pt x 184.2227pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -602,65 +614,71 @@ ersion <1.7>, but at most version <1.5> allowed
 <figs/popt.pdf, id=98, 371.0964pt x 315.91325pt>
 File: figs/popt.pdf Graphic file (type pdf)
 <use figs/popt.pdf>
-Package pdftex.def Info: figs/popt.pdf  used on input line 306.
+Package pdftex.def Info: figs/popt.pdf  used on input line 314.
 (pdftex.def)             Requested size: 222.65955pt x 189.54941pt.
-[6 <./figs/popt.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 413--413
+[6]
+Overfull \hbox (3.71802pt too wide) in paragraph at lines 359--369
+ [][] 
+ []
+
+[7 <./figs/popt.pdf>]
+Underfull \vbox (badness 2547) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 445--445
 []|\T1/ptm/m/n/7 Average $\OT1/ntxtlf/m/n/7.3 &$
  []
 
-<figs/box_F-measure.pdf, id=113, 392.46625pt x 298.11375pt>
+<figs/box_F-measure.pdf, id=117, 392.46625pt x 298.11375pt>
 File: figs/box_F-measure.pdf Graphic file (type pdf)
 <use figs/box_F-measure.pdf>
-Package pdftex.def Info: figs/box_F-measure.pdf  used on input line 420.
+Package pdftex.def Info: figs/box_F-measure.pdf  used on input line 452.
 (pdftex.def)             Requested size: 235.48155pt x 178.86963pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7]
-Underfull \hbox (badness 10000) in paragraph at lines 461--461
+[8 <./figs/box_F-measure.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 493--493
 []|\T1/ptm/m/n/7 Average $\OT1/ntxtlf/m/n/7.3 &$
  []
 
-<figs/box_PofB20.pdf, id=118, 392.46625pt x 296.10625pt>
+<figs/box_PofB20.pdf, id=165, 392.46625pt x 296.10625pt>
 File: figs/box_PofB20.pdf Graphic file (type pdf)
 <use figs/box_PofB20.pdf>
-Package pdftex.def Info: figs/box_PofB20.pdf  used on input line 469.
+Package pdftex.def Info: figs/box_PofB20.pdf  used on input line 501.
 (pdftex.def)             Requested size: 235.48155pt x 177.66512pt.
 
-Overfull \hbox (3.28313pt too wide) in paragraph at lines 469--470
+Overfull \hbox (3.28313pt too wide) in paragraph at lines 501--502
 [][] 
  []
 
-<figs/box_IFA.pdf, id=119, 390.45876pt x 296.10625pt>
+<figs/box_IFA.pdf, id=166, 390.45876pt x 296.10625pt>
 File: figs/box_IFA.pdf Graphic file (type pdf)
 <use figs/box_IFA.pdf>
-Package pdftex.def Info: figs/box_IFA.pdf  used on input line 474.
+Package pdftex.def Info: figs/box_IFA.pdf  used on input line 506.
 (pdftex.def)             Requested size: 234.27705pt x 177.66512pt.
 
-Overfull \hbox (2.07863pt too wide) in paragraph at lines 474--475
+Overfull \hbox (2.07863pt too wide) in paragraph at lines 506--507
 [][] 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [8 <./figs/box_F-measure.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 511--511
+Underfull \hbox (badness 10000) in paragraph at lines 543--543
 []|\T1/ptm/m/n/7 Average $\OT1/ntxtlf/m/n/7.3 &$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 545--545
+Underfull \hbox (badness 10000) in paragraph at lines 577--577
 []|\T1/ptm/m/n/7 Average $\OT1/ntxtlf/m/n/7.3 &$
  []
 
 <figs/box_Popt.pdf, id=167, 392.46625pt x 296.10625pt>
 File: figs/box_Popt.pdf Graphic file (type pdf)
 <use figs/box_Popt.pdf>
-Package pdftex.def Info: figs/box_Popt.pdf  used on input line 552.
+Package pdftex.def Info: figs/box_Popt.pdf  used on input line 584.
 (pdftex.def)             Requested size: 235.48155pt x 177.66512pt.
-[9 <./figs/box_PofB20.pdf> <./figs/box_IFA.pdf
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9]
+[10 <./figs/box_PofB20.pdf> <./figs/box_IFA.pdf
 
 pdfTeX warning: pdflatex.exe (file ./figs/box_IFA.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
@@ -672,10 +690,10 @@ e pdfs with page group included in a single page
 
 pdfTeX warning: pdflatex.exe (file ./figs/dimensions.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
-<figs/dimensions.pdf, id=279, 388.22601pt x 304.50362pt>
+<figs/dimensions.pdf, id=282, 388.22601pt x 304.50362pt>
 File: figs/dimensions.pdf Graphic file (type pdf)
 <use figs/dimensions.pdf>
-Package pdftex.def Info: figs/dimensions.pdf  used on input line 568.
+Package pdftex.def Info: figs/dimensions.pdf  used on input line 600.
 (pdftex.def)             Requested size: 232.9374pt x 182.70357pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -683,61 +701,68 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10]
+
 
 pdfTeX warning: pdflatex.exe (file ./figs/resampling_rates.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
 <figs/resampling_rates.pdf, id=283, 371.09741pt x 344.45187pt>
 File: figs/resampling_rates.pdf Graphic file (type pdf)
 <use figs/resampling_rates.pdf>
-Package pdftex.def Info: figs/resampling_rates.pdf  used on input line 577.
+Package pdftex.def Info: figs/resampling_rates.pdf  used on input line 609.
 (pdftex.def)             Requested size: 222.66016pt x 206.67271pt.
-[11 <./figs/dimensions.pdf> <./figs/resampling_rates.pdf
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11]
+[12 <./figs/dimensions.pdf> <./figs/resampling_rates.pdf
 
 pdfTeX warning: pdflatex.exe (file ./figs/resampling_rates.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
->] (./main.bbl [12]) [13]
-<./IEEEbiography/Hao_Wang.pdf, id=315, 553.06625pt x 829.0975pt>
+>] (./main.bbl [13]) [14]
+<./IEEEbiography/Hao_Wang.pdf, id=318, 553.06625pt x 829.0975pt>
 File: ./IEEEbiography/Hao_Wang.pdf Graphic file (type pdf)
 <use ./IEEEbiography/Hao_Wang.pdf>
-Package pdftex.def Info: ./IEEEbiography/Hao_Wang.pdf  used on input line 640.
+Package pdftex.def Info: ./IEEEbiography/Hao_Wang.pdf  used on input line 673.
 (pdftex.def)             Requested size: 66.42415pt x 99.57596pt.
 File: ./IEEEbiography/Hao_Wang.pdf Graphic file (type pdf)
 <use ./IEEEbiography/Hao_Wang.pdf>
-Package pdftex.def Info: ./IEEEbiography/Hao_Wang.pdf  used on input line 640.
+Package pdftex.def Info: ./IEEEbiography/Hao_Wang.pdf  used on input line 673.
 (pdftex.def)             Requested size: 66.42415pt x 99.57596pt.
-<./IEEEbiography/Weiyuan_Zhuang.pdf, id=318, 304.13625pt x 427.5975pt>
+<./IEEEbiography/Weiyuan_Zhuang.pdf, id=321, 304.13625pt x 427.5975pt>
 File: ./IEEEbiography/Weiyuan_Zhuang.pdf Graphic file (type pdf)
 <use ./IEEEbiography/Weiyuan_Zhuang.pdf>
 Package pdftex.def Info: ./IEEEbiography/Weiyuan_Zhuang.pdf  used on input line
- 647.
+ 680.
 (pdftex.def)             Requested size: 70.8316pt x 99.58502pt.
 File: ./IEEEbiography/Weiyuan_Zhuang.pdf Graphic file (type pdf)
 <use ./IEEEbiography/Weiyuan_Zhuang.pdf>
 Package pdftex.def Info: ./IEEEbiography/Weiyuan_Zhuang.pdf  used on input line
- 647.
+ 680.
 (pdftex.def)             Requested size: 70.8316pt x 99.58502pt.
-<./IEEEbiography/Xiaofang_Zhang.pdf, id=321, 442.65375pt x 651.43375pt>
+<./IEEEbiography/Xiaofang_Zhang.pdf, id=324, 442.65375pt x 651.43375pt>
 File: ./IEEEbiography/Xiaofang_Zhang.pdf Graphic file (type pdf)
 <use ./IEEEbiography/Xiaofang_Zhang.pdf>
 Package pdftex.def Info: ./IEEEbiography/Xiaofang_Zhang.pdf  used on input line
- 654.
+ 687.
 (pdftex.def)             Requested size: 67.66501pt x 99.57957pt.
 File: ./IEEEbiography/Xiaofang_Zhang.pdf Graphic file (type pdf)
 <use ./IEEEbiography/Xiaofang_Zhang.pdf>
 Package pdftex.def Info: ./IEEEbiography/Xiaofang_Zhang.pdf  used on input line
- 654.
+ 687.
 (pdftex.def)             Requested size: 67.66501pt x 99.57957pt.
- [14
+ [15
 
 
  <./IEEEbiography/Hao_Wang.pdf> <./IEEEbiography/Weiyuan_Zhuang.pdf> <./IEEEbio
 graphy/Xiaofang_Zhang.pdf>] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 5200 strings out of 492609
- 72988 string characters out of 6126182
- 161238 words of memory out of 5000000
- 8957 multiletter control sequences out of 15000+600000
+ 5257 strings out of 492609
+ 73912 string characters out of 6126182
+ 173825 words of memory out of 5000000
+ 9010 multiletter control sequences out of 15000+600000
  155310 words of font info for 197 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  39i,10n,53p,1754b,366s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -757,10 +782,10 @@ pe1/public/newtx/txsys.pfb><c:/Alex/Software/texlive/2019/texmf-dist/fonts/type
 w/times/utmbi8a.pfb><c:/Alex/Software/texlive/2019/texmf-dist/fonts/type1/urw/t
 imes/utmr8a.pfb><c:/Alex/Software/texlive/2019/texmf-dist/fonts/type1/urw/times
 /utmri8a.pfb>
-Output written on main.pdf (14 pages, 644223 bytes).
+Output written on main.pdf (15 pages, 648646 bytes).
 PDF statistics:
- 381 PDF objects out of 1000 (max. 8388607)
- 181 compressed objects within 2 object streams
+ 384 PDF objects out of 1000 (max. 8388607)
+ 183 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  102 words of extra memory for PDF output out of 10000 (max. 10000000)
 
